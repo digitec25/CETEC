@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CETEC — Soluciones IT</title>
+  <meta name="description" content="CETEC: soporte técnico, cableado de red, reparación de equipos, desarrollo web y sistemas a medida en Paraguay." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="nav-logo" href="index.html">
+    <svg width="34" height="38" viewBox="0 0 38 42" fill="none" aria-hidden="true">
+      <path d="M19 1L36 8V20C36 29.5 28.5 38 19 41C9.5 38 2 29.5 2 20V8L19 1Z" fill="#1a56db"/>
+      <path d="M19 3.5L33.5 9.5V20C33.5 28.2 27 35.8 19 38.5C11 35.8 4.5 28.2 4.5 20V9.5L19 3.5Z" fill="#1447c0"/>
+      <text x="19" y="25" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="800" fill="white">C</text>
+    </svg>
+    <div><span class="nav-brand-name">CETEC</span><span class="nav-brand-tag">Soluciones IT</span></div>
+  </a>
+  <div class="nav-links">
+    <a class="nl" href="servicios.html">Servicios</a>
+    <a class="nl" href="nosotros.html">Nosotros</a>
+    <a class="nl" href="productos.html">Productos</a>
+    <a class="nl" href="clientes.html">Clientes</a>
+    <a class="nl" href="contacto.html">Contacto</a>
+  </div>
+</nav>
+
+<!-- BANNER -->
+<div class="banner">
+  <div class="slide active" id="s0" style="background-image:url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1400&q=80')"></div>
+  <div class="slide"        id="s1" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1400&q=80')"></div>
+  <div class="slide"        id="s2" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400&q=80')"></div>
+  <div class="slide"        id="s3" style="background-image:url('https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=1400&q=80')"></div>
+  <div class="slide-overlay"></div>
+  <div class="banner-content">
+    <div class="banner-eyebrow"><div class="bdot"></div><span id="ey-txt">Programación a medida</span></div>
+    <h1>Tecnología que<br><em>impulsa</em> tu negocio</h1>
+    <p class="banner-p">Soporte técnico, desarrollo de software, reparación de equipos y cableado de red. Todo en un solo lugar.</p>
+    <div class="banner-btns">
+      <a class="btn-primary" href="servicios.html">Nuestros servicios</a>
+      <a class="btn-ghost"   href="contacto.html">Contactarnos</a>
+    </div>
+  </div>
+  <div class="slide-nav">
+    <div class="sdot on" onclick="goToSlide(0)"></div>
+    <div class="sdot"    onclick="goToSlide(1)"></div>
+    <div class="sdot"    onclick="goToSlide(2)"></div>
+    <div class="sdot"    onclick="goToSlide(3)"></div>
+  </div>
+  <div class="slide-counter"><span id="sc-cur">1</span> / 4</div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat"><span class="stat-n">+500</span><div class="stat-l">Clientes atendidos</div></div>
+  <div class="stat"><span class="stat-n">+8 años</span><div class="stat-l">De experiencia</div></div>
+  <div class="stat"><span class="stat-n">2</span><div class="stat-l">Productos propios</div></div>
+  <div class="stat"><span class="stat-n">24 h</span><div class="stat-l">Soporte garantizado</div></div>
+</div>
+
+<!-- ============================================================
+     SERVICIOS PREVIEW
+     ============================================================ -->
+<section class="home-section">
+  <div class="hs-head">
+    <div>
+      <div class="kicker">Servicios</div>
+      <h2 class="hs-title">¿En qué podemos ayudarte?</h2>
+      <p class="hs-sub">Soluciones tecnológicas para cada necesidad de tu empresa.</p>
+    </div>
+    <a class="hs-link" href="servicios.html">Ver todos los servicios <i class="ti ti-arrow-right"></i></a>
+  </div>
+  <div class="svc-grid">
+    <div class="svc">
+      <div class="svc-ic"><i class="ti ti-cpu" aria-hidden="true"></i></div>
+      <h3>Soporte técnico</h3>
+      <p>Hardware y software, mantenimiento preventivo y correctivo para tu empresa.</p>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><i class="ti ti-network" aria-hidden="true"></i></div>
+      <h3>Cableado de red</h3>
+      <p>Infraestructura de red estructurada, instalación y certificación profesional.</p>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><i class="ti ti-device-laptop" aria-hidden="true"></i></div>
+      <h3>Reparación de equipos</h3>
+      <p>Notebooks y PCs de escritorio, diagnóstico rápido con garantía.</p>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><i class="ti ti-world" aria-hidden="true"></i></div>
+      <h3>Diseño web</h3>
+      <p>Sitios modernos, responsivos y optimizados para tu negocio online.</p>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><i class="ti ti-code" aria-hidden="true"></i></div>
+      <h3>Sistemas a medida</h3>
+      <p>Software personalizado adaptado a los procesos de tu empresa.</p>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><i class="ti ti-headset" aria-hidden="true"></i></div>
+      <h3>Consultoría IT</h3>
+      <p>Asesoramiento estratégico para optimizar tu infraestructura tecnológica.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     POR QUÉ CETEC
+     ============================================================ -->
+<section class="home-section hs-alt">
+  <div class="hs-head">
+    <div>
+      <div class="kicker">Por qué elegirnos</div>
+      <h2 class="hs-title">Más de 8 años resolviendo desafíos IT</h2>
+      <p class="hs-sub">Trabajamos con empresas de todos los rubros en Paraguay con compromiso y resultados.</p>
+    </div>
+  </div>
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="why-ic"><i class="ti ti-clock-check"></i></div>
+      <h3>Respuesta rápida</h3>
+      <p>Soporte garantizado en menos de 24 horas. Tu operación no puede esperar.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-ic"><i class="ti ti-shield-check"></i></div>
+      <h3>Garantía en cada trabajo</h3>
+      <p>Reparaciones y configuraciones con garantía escrita. Hacemos las cosas bien.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-ic"><i class="ti ti-users"></i></div>
+      <h3>Equipo especializado</h3>
+      <p>Técnicos certificados con experiencia real en empresas y entornos exigentes.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-ic"><i class="ti ti-receipt"></i></div>
+      <h3>Precios transparentes</h3>
+      <p>Presupuesto detallado antes de comenzar. Sin sorpresas ni costos ocultos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRODUCTOS DESTACADOS
+     ============================================================ -->
+<section class="home-section">
+  <div class="hs-head">
+    <div>
+      <div class="kicker">Productos propios</div>
+      <h2 class="hs-title">Software desarrollado por CETEC</h2>
+      <p class="hs-sub">Soluciones listas para implementar en tu empresa.</p>
+    </div>
+    <a class="hs-link" href="productos.html">Ver todos los productos <i class="ti ti-arrow-right"></i></a>
+  </div>
+  <div class="prod-home-grid">
+    <div class="prod-home-card">
+      <div class="phc-accent"></div>
+      <div class="phc-body">
+        <div class="phc-tag">Producto</div>
+        <h3>ADP-Delivery</h3>
+        <p>Sistema completo para el control y gestión de delivery. Pedidos, repartidores y reportes en una sola plataforma.</p>
+        <ul class="phc-list">
+          <li><i class="ti ti-check"></i>Control de pedidos en tiempo real</li>
+          <li><i class="ti ti-check"></i>Seguimiento de repartidores</li>
+          <li><i class="ti ti-check"></i>Reportes avanzados</li>
+          <li><i class="ti ti-check"></i>Integración con medios de pago</li>
+        </ul>
+        <a class="phc-btn" href="productos.html">Conocer más <i class="ti ti-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="prod-home-card">
+      <div class="phc-accent"></div>
+      <div class="phc-body">
+        <div class="phc-tag">Módulo</div>
+        <h3>RRHH — Vacantes</h3>
+        <p>Módulo para publicar puestos de trabajo y gestionar todo el proceso de selección de candidatos online.</p>
+        <ul class="phc-list">
+          <li><i class="ti ti-check"></i>Publicación de vacantes</li>
+          <li><i class="ti ti-check"></i>Portal de postulación online</li>
+          <li><i class="ti ti-check"></i>Gestión de candidatos</li>
+          <li><i class="ti ti-check"></i>Notificaciones automáticas</li>
+        </ul>
+        <a class="phc-btn" href="productos.html">Conocer más <i class="ti ti-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIO DESTACADO
+     ============================================================ -->
+<section class="home-section hs-alt">
+  <div class="hs-head">
+    <div>
+      <div class="kicker">Lo que dicen nuestros clientes</div>
+      <h2 class="hs-title">Resultados que hablan por sí solos</h2>
+    </div>
+    <a class="hs-link" href="clientes.html">Ver todos los clientes <i class="ti ti-arrow-right"></i></a>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="test-quote">"CETEC resolvió todos nuestros problemas de red en tiempo récord. Profesionales, rápidos y confiables. Los recomendamos sin dudarlo."</p>
+      <div class="test-author">
+        <div class="test-av">JM</div>
+        <div><div class="test-name">Juan Medina</div><div class="test-co">Gerente IT · TechPro SA</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="test-quote">"El sistema ADP-Delivery transformó nuestra operación. Ahora controlamos cada pedido en tiempo real y los errores bajaron a cero."</p>
+      <div class="test-author">
+        <div class="test-av">SR</div>
+        <div><div class="test-name">Sandra Rojas</div><div class="test-co">Directora · LogiRed</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="test-quote">"Nos desarrollaron un sistema de gestión a medida que mejoró enormemente la eficiencia de nuestro equipo. Muy recomendados."</p>
+      <div class="test-author">
+        <div class="test-av">AG</div>
+        <div><div class="test-name">Ana González</div><div class="test-co">Gerente General · Nexo Digital</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA FINAL
+     ============================================================ -->
+<section class="home-cta">
+  <div class="hcta-inner">
+    <h2 class="hcta-title">¿Listo para mejorar tu tecnología?</h2>
+    <p class="hcta-sub">Contanos tu necesidad y te ayudamos a encontrar la mejor solución para tu empresa.</p>
+    <div class="hcta-btns">
+      <a class="btn-primary" href="contacto.html">Contactarnos ahora</a>
+      <a class="btn-outline"  href="servicios.html">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="fl-logo">
+    <svg width="28" height="32" viewBox="0 0 38 42" fill="none" aria-hidden="true">
+      <path d="M19 1L36 8V20C36 29.5 28.5 38 19 41C9.5 38 2 29.5 2 20V8L19 1Z" fill="#1a56db"/>
+      <path d="M19 3.5L33.5 9.5V20C33.5 28.2 27 35.8 19 38.5C11 35.8 4.5 28.2 4.5 20V9.5L19 3.5Z" fill="#1447c0"/>
+      <text x="19" y="25" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="800" fill="white">C</text>
+    </svg>
+    <div><div class="fl-brand">CETEC</div><span class="fl-tag">Soluciones IT</span></div>
+  </div>
+  <div class="fl-copy">© 2026 CETEC. Todos los derechos reservados.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
